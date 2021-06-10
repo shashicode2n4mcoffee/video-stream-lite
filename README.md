@@ -1,3 +1,34 @@
+
+This is a hobby project built using Reactjs,Youtube Api and Semantic UI.
+
+Project has 5 components as below:
+
+App.js
+SearchBar.js
+VideoList.js
+VideoItem.js
+VIdeoDetail.js
+
+Here I fetched data from Youtube Api.
+
+I didnt attach the api file. Below is the code for youtube.js file in the project
+
+import axios from 'axios'
+
+const KEY = 'XYZ'
+
+export default axios.create({
+  baseURL: 'https://www.googleapis.com/youtube/v3',
+  params: {
+    part: 'snippet',
+    maxResults: 20,
+    key: KEY,
+  },
+})
+
+==================================================================================================================================================================
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
